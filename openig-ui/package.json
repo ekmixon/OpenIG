@@ -5,7 +5,7 @@
   "devDependencies": {
     "babel-eslint": "6.1.2",
     "babel-preset-es2015": "6.9.0",
-    "eslint": "4.18.2",
+    "eslint": "5.0.0",
     "eslint-config-forgerock": "1.1.1",
     "eslint-formatter-warning-summary": "1.0.1",
     "eslint-plugin-requirejs": "2.0.1",
@@ -16,8 +16,8 @@
     "grunt-contrib-less": "1.3.0",
     "grunt-contrib-qunit": "1.3.0",
     "grunt-contrib-requirejs": "1.0.0",
-    "grunt-contrib-watch": "1.0.0",
-    "grunt-eslint": "19.0.0",
+    "grunt-contrib-watch": "1.1.0",
+    "grunt-eslint": "20.0.0",
     "grunt-notify": "0.4.5",
     "grunt-serve": "0.1.6",
     "grunt-sync": "0.8.1",
@@ -35,6 +35,12 @@
     "send": ">=0.11.1",
     "dot": ">=1.1.3",
     "lodash": ">=4.17.21",
-    "grunt": ">=1.3.0"
-  }
+    "grunt": ">=1.3.0",
+    "snyk": "^1.662.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
