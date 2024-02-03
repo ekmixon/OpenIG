@@ -3,7 +3,7 @@
   "description": "OpenIG UI",
   "private": true,
   "devDependencies": {
-    "babel-eslint": "6.1.2",
+    "babel-eslint": "10.1.0",
     "babel-preset-es2015": "6.9.0",
     "eslint": "4.18.2",
     "eslint-config-forgerock": "1.1.1",
